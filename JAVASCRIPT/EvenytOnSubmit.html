@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="getSubmit()">
+    <input type="text" id="inp1" placeholder="name">
+    <input type="email" name="" id="inp2" placeholder="m@il">
+    <button type="submit">Submit</button>
+    </form>
+    <script>
+        function getSubmit()
+        {
+            let inp1=document.getElementById("inp1").value;
+            let inp2=document.getElementById("inp2").value;
+            if(inp1=="sachin" && inp2=="example@123.com")
+            {
+                alert("your form was succesfully submitted!!!!!")
+            }
+            else{
+                alert("you have enterd incorrcet details.")
+            }
+        }
+    </script>
+</body>
+</html>

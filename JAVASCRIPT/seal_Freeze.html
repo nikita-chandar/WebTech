@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // .................................OBJECT METHODS.............................
+         let obj={
+            key1:"value1",
+            key2:"value2",
+            key3:"value3",
+            key4:"value4",
+
+        }
+        console.log(obj);
+        // //seal():seal() method is lock but its key and value will modifiedable.(i.e=>updated)
+        // console.log(Object.seal(obj));
+        // console.log(obj.key5="value4");
+        // console.log(obj);
+        // console.log(obj.key3="updated key");
+        // console.log(obj);
+
+
+        //freeze():totally lock not modifible
+        console.log(Object.freeze(obj));
+        console.log(obj.key5="add new");
+        console.log(obj.key3="updated");
+        console.log(obj);
+
+
+
+    </script>
+</body>
+</html>

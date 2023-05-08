@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: auto;
+            box-sizing: border-box;
+            align-items: center;
+        }
+        .parent{
+            height: 300px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:gray;
+        }
+        .child{
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            box-sizing: border-box;
+            background-image: url(./Virat-Kohli-hand-on-ear-listening-to-audience.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .child:hover{
+            transition-duration: 5s;
+            transform:perspective(800px)rotateX(360deg);
+            translate: 100px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+            <div class="child"></div>
+            </div>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("HEY THIS EXTRNAL JS IMPLEMENTATION...")

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script>
+        function createObject(empNo,empName,emmpSal)
+        {
+            this.empNo=empNo;
+            this.empName=empName;
+            this.empSal=empSal;
+
+        }
+        emp=new createObject(101,"saatvik",456.99);
+
+        function displayEmpObject()
+        {
+            document.write(emp.empNo+" "+emp.empName+" "+emp.empSal);
+            document.write(emp);
+        }
+    </script>
+    <body>
+
+  <input type="button" value="display" onclick="displayEmpObject()">
+</body>
+  </html>

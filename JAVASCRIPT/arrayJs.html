@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // .....IN JS ARRAY IS CONTOGOUS BLOCK OF MEOMORY WHICH STORES HETROGENOUS TYPE OF ELEMENT...
+        //ARRAY BY USING LITERALS
+
+        let arr1 = ["hello", true, 10, { name: "object" }]   //object
+        console.log(arr1);
+        // arr1[4]="updated value";
+        // console.log(arr1);
+        // arr1[3]="obj replaced";
+        // console.log(arr1);   //hello,true,10,obj replaced,updated value
+
+        console.log(arr1[3].name);
+        console.log(arr1[3].age = 45);
+        console.log(arr1);
+        arr1[6] = "index 6"
+        console.log(arr1);
+        arr1[4] = "index 4"
+        console.log(arr1);
+        //****************OUTPUT************************************************************
+        // 7) ['hello', true, 10, {…}, 'index 4', empty, 'index 6']
+        //0: "hello"
+        //1: true
+        //2: 10
+        //3: {name: 'object', age: 45}
+        //4: "index 4"
+        //6: "index 6"length:
+        // 7[[Prototype]]: Array(0)
+    </script>
+</body>
+
+</html>

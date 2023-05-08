@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+
+             max-width: 600px; 
+            border: 1px solid white;
+            background: linear-gradient(to right, #ff33cc 0%, #ffcccc 103%);
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: space-around;
+            margin: auto;
+            padding: 20px;
+            
+        }
+
+        #child {
+            max-width: 600px; 
+            border: 1px solid white;
+            justify-content: center;
+            margin: 50px auto;
+            background-color: white;
+            padding: 60px;
+            display: flex;
+            box-shadow:3px 4px rgb(44, 39, 39);
+            flex-direction: column;
+           
+        }
+
+        .inp {
+            border-width: 0 1px 1px 0;
+            border-style: solid;
+            border-color: black;
+            margin: 15px 0 15px 0;
+        }
+
+        .text {
+            text-transform: uppercase;
+            font-size: medium;
+            line-height: 20px;
+
+        }
+
+        .h1 {
+            text-align: center;
+        }
+
+        .wrraper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn {
+            width: 90px;
+            align-self: center;
+            /* background-color: #f50a9b; */
+            border: 1px solid pink;
+            border-radius: 50px;
+            padding: 6px;
+            color:black;
+            background:linear-gradient(to right, #ff33cc 0%, #ccccff 103%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="child">
+            <div class="h1">
+                <h1> Contact Us</h1>
+            </div>
+            <div class="wrraper">
+                <label for="" class="text">Your Name*</label>
+                <div>
+                    <input type="text" id="Yname " fname="Yn" class="inp" placeholder=" First name" minlength="0"
+                        maxlength="19" autofocus>
+                    <input type="text" id="Lname " Lname="Yn" class="inp" placeholder="Last name" minlength="0"
+                        maxlength="9" autofocus>
+                    <br><br>
+                </div>
+            </div>
+            <div class="wrraper">
+                <label for="" class="text"> Email Address*</label>
+
+                <input type="email" id="email" class="inp" placeholder="Eg.example@gmail.com" minlength="0"
+                    maxlength="17" autofocus><br><br>
+
+            </div>
+            <div class="wrraper">
+                <label for="" class="text">Phone Number*</label>
+
+                <input type="text" id="Yname " name="Yname" class="inp" placeholder="Eg.+1800 0000" minlength="0"
+                    maxlength="9" autofocus><br><br>
+
+            </div>
+            <div class="wrraper">
+
+                <label for="" class="text">Message*</label>
+                <textarea id="msg " name="msg" rows="4" cols="50" class="inp" placeholder="Write your message here"
+                    minlength="0" maxlength="9" autofocus></textarea>
+
+            </div>
+            <input type="submit" value="Submit" class="btn">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

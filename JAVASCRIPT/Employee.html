@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //OBJECT BY USING FUNCTION KEYWORD
+        function Emp(ename,eid,esal,eadhar)
+        {
+            this.ename=ename;
+            this.eid=eid;
+            this.esal=esal;
+            this.eadhar=eadhar;
+            this.getDetails=function (){
+                return "emp name is: "+this.ename +"emp id is: "+this.eid +"emp salary is: "
+                +this.esal +"employeee adhar no is: " + this.eadhar
+            }
+
+        }
+        let emp1=new Emp("Amar","INF123",25000,1234)
+        console.log(emp1);
+        let emp2=new Emp("akbar","inf124",22000,1245)
+        console.log(emp2);
+        let emp3=new Emp("nikita","INF143",25000.67,7800)
+        console.log(emp3);
+        let emp4=new Emp("payal","INF563",34000,8906)
+        console.log(emp4);
+        let emp5=new Emp("Akshdha","INF623",2550,1290)
+        console.log(emp5);
+        let emp6=new Emp("sana","INF213",2370,8134)
+        console.log(emp6);
+        let emp7=new Emp("gaytri","INF891",21000,9234)
+        console.log(emp7);
+        let emp8=new Emp("mayuri","INF911",21700,9294)
+        console.log(emp8);
+        let emp9=new Emp("gaytri2","INF891",21000,9234)
+        console.log(emp7);
+        let emp10=new Emp("jagruti","INF891",21552,0234)
+        console.log(emp7);
+        console.log(emp2.ename);
+        emp2.ename="anthony"
+        console.log(emp2);
+        console.log(emp2.getDetails());
+    </script>
+</body>
+</html>

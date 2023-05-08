@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer United States | For Gamers.By Gamers.</title>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    
+
+    <style>
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        html,
+        body {
+            margin: 0;
+            background-color: #222;
+        }
+
+        section {
+            padding-bottom: 7px;
+        }
+
+        .menu {
+            list-style-type: none;
+            /* to remove . from li use this property */
+            display: flex;
+            justify-content: space-around;
+            background-color: #101101;
+            margin: 0;
+            align-items: center;
+            
+        }
+
+        .menu li a {
+
+            color: #555555;
+        }
+
+        #raz {
+            height: 50px;
+            width: 50px;
+            /* background-color: #222; */
+            display: block;
+        }
+
+        #head {
+            display: flex;
+            justify-content: center;
+        }
+
+        #rights {
+            color: white;
+            font-weight: bold;
+            background-color: #555555;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        #raz-at {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            color: white;
+            padding: 10px;
+            background-color: #222;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        #btn {
+            padding: 9px;
+            background-color: #00ff00;
+            border-radius: 2px;
+            border: none;
+            font-weight: bold;
+        }
+
+        .img-reg {
+            max-width: 100%;
+            height: 100vh;
+            min-height: 700px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .w-50 {
+            width: 49%;
+        }
+
+        .raz-col1 {
+            background-image: url(./images/razar3.jpg);
+            height: 580px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .raz-col2 {
+            background-image: url(./images/razar4.jpg);
+            height: 580px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-left: 15px;
+            background-position: center;
+        }
+
+        .raz-col3 {
+            background-image: url(./images/keyboared.jpg);
+            height: 580px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .raz-col4 {
+            background-image: url(./images/laptop.jpg);
+            height: 580px;
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            padding-left: 15px;
+            background-position: center;
+        }
+
+        .raz-col5 {
+            background-image: url(./images/car.jpg);
+            height: 580px;
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .raz-col6 {
+            background-image: url(./images/device.jpg);
+            height: 580px;
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            padding-left: 15px;
+            background-position: center;
+        }
+
+        .footer.shop {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .img-txt {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            font-size: large;
+        }
+
+        .container-2 {
+            font-family: Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple;
+            color: white;
+        }
+
+        .logo {
+            position: relative;
+        }
+
+        .img-2 {
+            position: relative;
+        }
+
+        .img-3 {
+            position: relative;
+        }
+
+        .pos {
+            position: relative;
+        }
+
+        .img-txt1 {
+            position: absolute;
+            /* top: -11px; */
+            left: 164px;
+            text-align: center;
+            font-size: large;
+        }
+
+        .img-txt2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: large;
+        }
+
+        .img-txt h1 {
+            font-size: 43px;
+            font-weight: 16;
+            margin-bottom: 0;
+        }
+
+        .img-txt h2 {
+            font-size: 27px;
+            font-weight: 36;
+            margin-bottom: 0;
+        }
+
+        .img-txt1 h1 {
+            font-size: 40px;
+            font-weight: 16;
+            margin-bottom: 0;
+        }
+
+        .img-txt1 h2 {
+            font-size: 20px;
+            font-weight: 36;
+            margin-bottom: 0;
+        }
+
+        .img-txt2 h1 {
+            font-size: 40px;
+            font-weight: 16;
+            margin-bottom: 0;
+        }
+
+        .img-txt2 h2 {
+            font-size: 20px;
+            font-weight: 36;
+            margin-bottom: 0;
+        }
+
+        .wht-a {
+            color: beige;
+            font-weight: 25px;
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: 400;
+            font-family: system-ui;
+        }
+
+        .wht-a:hover {
+            text-decoration: underline;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: #111111;
+            padding: 10px 7px 10px 7px;
+        }
+
+        footer {
+            background-color: #111111;
+        }
+
+        .footer-menu {
+            padding-left: 0;
+        }
+
+        .footer ul li a {
+            color: #999;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 400;
+            font-family: Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
+            ;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer ul li {
+            margin-bottom: 11px;
+        }
+
+        .icn {
+            border-radius: 50%;
+            border: 2px solid #44d62c;
+            font-size: medium;
+
+            padding: 8px 9px;
+            font-size: 15px;
+            justify-content: end;
+        }
+
+        .icon-I ul {
+            justify-content: end;
+            display: flex;
+            align-items: baseline;
+        }
+
+        .icon-I ul li {
+            margin-right: 9px;
+        }
+
+        .green-color {
+            color: #44d62c;
+        }
+
+        .footer-menu .line-divider {
+            border-bottom: 1px solid #555555;
+        }
+
+        span.sub-title {
+            font-weight: 300;
+            font-size: 12px;
+        }
+
+        .cpy-right {
+            font-size: small;
+            font-weight: 100;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #111111;
+            padding: 10px 0 10px 0;
+            border-top: 1px solid #fff;
+        }
+        .colr-grey {
+            color: #999;
+            text-decoration: none;
+        }
+        .colr-grey:hover {
+            text-decoration: underline;
+        }
+        .line-divider {
+            border-bottom: 1px solid #999;
+            padding: 0 5px 0 5px;
+            /* display: flex;
+    justify-content: space-between; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav id="col">
+            <ul class="menu">
+                <img src="https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg" alt="Razer Logo" id="raz">
+                <li><a href="#Store">Store</a></li>
+                <li><a href="#PC">PC</a></li>
+                <li><a href="#Console">Console</a></li>
+                <li><a href="#Mobile">Mobile</a></li>
+                <li><a href="#Lifestyle">Lifestyle</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Community">Community</a></li>
+                <li><a href="#Support">Support</a></li>
+                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+            </ul>
+        </nav>
+        <section id="rights">
+            <div class="container">
+                <span> All orders over US$79 will enjoy free standard shipping to the United States.
+            </div>
+        </section>
+        <section id="raz-at">
+            <!-- MUltiple class is created here -->
+            <div class="container d-flex w-100">
+                <span>RAZAR EDGE</span>
+                <button id="btn">BUY</button>
+            </div>
+        </section>
+        <div class="container-2">
+            <section>
+                <div class="logo">
+                    <img src="https://assets2.razerzone.com/images/pnx.assets/9d62c1abff9014287154ad41465dbea6/razer-edge-hero.jpg"
+                        alt="Razar img" class="img-reg w-100">
+                    <div class="img-txt">
+                        <h1 class="txt">RAZER EDGE</h1>
+                        <h2 class="txt">The Ultimate Android Gaming HandHeld</h2>
+                        <h3> <a class="wht-a" href="#">Learn More ></a> <a class="wht-a" href="#"> Buy ></a></h3>
+
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <div class="img-2">
+                    <img src="./images/atlas-homepage-desktop.jpg" alt="" class="w-100">
+                    <div class="img-txt">
+                        <h1>RAZER VR ACCESORIES</h1>
+                        <h2>FOR META QUEST2</h2>
+                        <h3> <a class="wht-a" href="#"> Learn More ></a> <a class="wht-a" href="#"> Buy ></a></h3>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="img-3">
+                    <img src="./images/razer-blade-18-homepage-desktop.jpg" alt="" class="w-100">
+                    <div class="img-txt">
+                        <h1>NEW RAZER BLADE 18</h1>
+                        <h2>THE ULTIMATE BLADE REPLACEMENT</h2>
+                        <h3> <a class="wht-a" href="#">Learn More > </a><a class="wht-a" href="#"> Buy ></a></h3>
+                    </div>
+                </div>
+            </section>
+            <div class="">
+                <section id="raz-img" class="d-flex ">
+                    <div class="w-50  raz-col1 pos">
+                        <div class="img-txt1">
+                            <h1>NEW RAZER BLADE 15</h1>
+                            <h2>POWERFUL.PORTABLE</h2>
+                            <h3> <a class="wht-a" href="#">Learn More </a><a class="wht-a" href="#"> Buy ></a></h3>
+                        </div>
+                    </div>
+                    <div class="w-50 raz-col2 pos">
+                        <div class="img-txt2">
+                            <h1>BITE BACK WITH RTX</h1>
+                            <h2>GET REDFALL BITE BACK EDITION WITH SELECT
+                                GEFORCE RTX 40 SERIES</h2>
+                            <h3> <a class="wht-a" href="#">Learn More > </a><a class="wht-a" href="#"> Buy ></a></h3>
+                        </div>
+                    </div>
+            </div>
+            </section>
+            <div class="pos">
+                <section id="raz-img2" class="d-flex">
+                    <div class="w-50  raz-col3 pos">
+                        <div class="img-txt1">
+                            <h1>RAZER EDGE</h1>
+                            <h2>HTE ULTIMATE ANDROID GAMING HANDHELD</h2>
+                            <h3> <a class="wht-a" href="#">Learn More ></a><a class="wht-a" href="#"> Buy ></a></h3>
+                        </div>
+                    </div>
+                    <div class="w-50 raz-col4 pos">
+                        <div class="img-txt2">
+                            <h1>NEW RAZER BLADE 16</h1>
+                            <h2>BIGGER.BETTER.STILL THE BEST</h2>
+                            <h3> <a class="wht-a" href="#">Learn More ></a><a class="wht-a" href="#"> Buy ></a></h3>
+                        </div>
+                    </div>
+            </div>
+            </section>
+
+            <section id="raz-img3" class="d-flex">
+                <div class="w-50  raz-col5 pos">
+                    <div class="img-txt1">
+                        <h1>RAZER ENKI PRO</h1>
+                        <h2>AUTOMOBILI LAMBORGHINI EDITION</h2>
+                        <h3> <a class="wht-a" href="#">Learn More ></a><a class="wht-a" href="#"> Buy ></a></h3>
+                    </div>
+                </div>
+                <div class="w-50 raz-col6 pos">
+                    <div class="img-txt2">
+                        <h1>MARCH FOR VICTORY</h1>
+                        <h2>JOIN OUR CAUSE TODAY</h2>
+                        <h3> <a class="wht-a" href="#">Learn More > </a><a class="wht-a" href="#"> Buy ></a></h3>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer container">
+                    <div class="shop">
+                        <span class="sub-title">Shop</span>
+                        <ul class="footer-menu">
+                            <li> <a href="#">RazerStores</a></li>
+                            <li><a href="#">RazerCafe</a></li>
+                            <li><a href="#">store Locator</a></li>
+                            <li><a href="#">Purchase program</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li> <a href="#">Exclusives</a></li>
+                            <li><a href="#">RazerStore Reward</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="explore">
+                        <span class="sub-title">Explore</span>
+                        <ul class="footer-menu">
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Chroma RGB</a></li>
+                            <li><a href="#">Concepts</a></li>
+                            <li><a href="#">Esports</a></li>
+                            <li><a href="#">Collabs</a></li>
+                        </ul>
+                    </div>
+                    <div class="Support">
+                        <span class="sub-title">Support</span>
+                        <ul class="footer-menu">
+                            <li><a href="#">Get Help</a></li>
+                            <li><a href="#">Registration & Warranty</a></li>
+                            <li><a href="#">RazerStore Support</a></li>
+                            <li><a href="#">RazerCare</a></li>
+                            <li><a href="#">Manage Razer ID</a></li>
+                            <li><a href="#">Support Videos</a></li>
+                            <li><a href="#">Accessibility Statement</a></li>
+                        </ul>
+                    </div>
+                    <div class="company">
+                        <span class="sub-title">Company</span>
+                        <ul class="footer-menu ">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press Room</a></li>
+                            <li><a href="#">Ventures</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="icon-I sc ">
+                        <span class="green-color">FOR GAMERS.BY GAMERS.™ </span>
+                        <ul class="footer-menu ">
+                            <li><i class="fa fa-facebook  icn green-color " aria-hidden="true"></i></li>
+                            <li><i class="fa fa-instagram icn green-color" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-twitter  icn green-color" aria-hidden="true"></i></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="cpy-right container">
+                    &copy; Copyright © 2023 Razer Inc. All rights reserved.
+                    <span><a class="colr-grey" href="#">Site Map </a></span>
+                    <span class="colr-grey"> | </span>
+                    <span><a class="colr-grey" href="#"> Legal Terms </a></span>
+                    <span class="colr-grey"> | </span>
+                    <span><a class="colr-grey" href="#">Privacy Policy </a></span>
+                    <span class="colr-grey"> | </span>
+                    <span><a class="colr-grey" href="#">Cookie Settings </a></span>
+                    <span><a class="colr-grey" href="#">United States | Change Location ></a></span>
+                </div>
+            </footer>
+</body>
+
+</html>

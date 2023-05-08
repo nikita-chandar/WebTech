@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* ..................WE CAN SET PRIORITY WITH THE HELP OF !important keyword................ */
+    /* h2{ */
+        /* color:greenyellow */
+    /* } */
+
+    #head1{    
+         /*ID SELECTOR*===1ST PRIORITY*/
+           color:darkorchid
+    }
+    .head1{    
+         /*CLASS SELECTOR*===2ND PRIORITY*/
+        color:lightyellow
+    }
+    h1{
+        color:navy
+    }
+
+    
+
+</style>
+<body>
+    <!-- ELEMENT SELECTOR :if u want to provide same behaviour to same tag-->
+    <!-- <h1>HEADING 1</h1> -->
+    <!-- <h2>HEADING 2</h2> -->
+    <!-- <h3>HEADING 3</h3> -->
+    <!-- <h4>HEADING 4</h4> -->
+    <!-- <h5>HEADING 5</h5> -->
+
+
+    <!-- UNIVERSAL SELECTOR -->
+    <h1 id="head1"  class ="head1">heading 1</h1>  
+    <!-- here we are taking same id and class element as "head1"  
+        no confusion will happen in this cas bcz we can rectify id by # operator and class by '.'operator. -->
+     
+    </body>
+</html>

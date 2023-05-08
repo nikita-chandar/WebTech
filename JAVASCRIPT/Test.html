@@ -1,0 +1,48 @@
+<!-- <html>
+   <head>
+    <script type="module" src="./main.js"></script>
+   </head>
+</html> -->
+
+<html>
+    <head>
+        <script>
+            function prom(complete)
+            {
+           // let complete=true;
+            //let prom=new Promise(function(resolve,reject){
+                return new Promise(function(resolve,reject){
+                    console.log("plz..wait server doing some proccesing.." );
+                    setTimeout(()=>{
+                    if(complete)
+             {
+                  resolve("i am pass")
+             }else{
+                reject("im am fail");
+             },10000);
+            });
+        }
+            // }
+            // if(complete)
+            // {
+            //      resolve("i am pass")
+            // }else{
+            //     reject("im am fail");
+
+            // });
+        // }
+        let onfullfillment=(result)=>
+        {
+            console.log(result);
+        }
+        let onRejection=(error)=>
+        {
+        console.log(prom(true));
+        }
+        prom(true).then(onfullfillment);
+        prom(false).catch(onRejection);
+        prom(true).then(onfullfillment).catch(onRejection);
+    }
+        </script>
+    </head>
+</html>

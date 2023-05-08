@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="./netflix_logo_icon_170919.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent {
+            height: 100%;
+            width: 100%;
+            background-image: url(./netflix.jpg);
+        }
+
+        .child {
+            height: 500px;
+
+        }
+
+        .top {
+            height: 40px;
+            width: 40px;
+        }
+
+        .head {
+            color: white;
+        }
+
+        .wrap {
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 60px 68px 40px 68px;
+        }
+
+        .wrapper1 {
+            margin-top: 20px;
+        }
+
+        .inp {
+            color: #333;
+            margin: 0 0 21px;
+            padding: 15px;
+        }
+
+        #btn {
+            margin-top: 40px;
+            background-color: #e50914;
+            padding: 10px;
+            color: white;
+            font-weight: 900;
+        }
+
+        .container {
+            margin: auto;
+            width: 450px;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .inp-wrap,
+        .help-link {
+            color: #b3b3b3;
+        }
+
+        .col2 {
+            display: flex;
+            flex-direction: row;
+            color: #b3b3b3;
+            margin-top: 30px;
+        }
+
+        .link {
+            font-weight: bolder;
+            /* color: #b3b3b3; */
+            color: white;
+        }
+
+        .para {
+            color: #b3b3b3;
+        }
+
+        .top {
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 45px;
+            vertical-align: middle;
+            width: 167px;
+            margin: 0%;
+            padding: 24px;
+        }
+
+        .footer,
+        .inner {
+            color: #b3b3b3;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+
+        .inner,.in {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-bottom: 19px;;
+            color: #b3b3b3;
+        }
+        .in{
+            justify-content: space-between;
+            margin-left: 48px;
+
+        }
+        .f{
+           
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="t">
+            <img src="./netflix1_official_logo_icon_168085.png" alt="netflix_logo" class="top">
+        </div>
+        <div class="child">
+            <div class="container">
+                <div class="wrap">
+                    <h1 class="head">Sign In</h1>
+                    <input type="text" placeholder="Email or Phone number" autofocus maxlength="25" class="inp" />
+                    <input type="text" placeholder="Password" autofocus maxlength="25" class="inp" />
+                    <!-- <input value="Signin" type="button" placeholder="signin" class="btn" /> -->
+                    <button class="inp" id="btn">Sign In</button>
+                    <div class="col">
+                        <div class="inp-wrap">
+                            <input type="checkbox" name="" id="rememberme">
+                            <label for="rememberme">Remember me</label>
+                        </div>
+                        <a class="help-link" href="#">Need help</a>
+                    </div>
+                    <div class="col2">
+                        <span>New to Netflix?</span>
+                        <a class="link" href="#">Sign up now</a>
+
+                    </div>
+                    <div class="col3">
+                        <span class="para">This page is protected by Google reCAPTCHA to ensure you're not a bot.</span>
+                        <a class="link-button" href="#">Learn more</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <span class="f">Questions? call on 000-800-919-1694</span>
+            <div class="inner">
+                <a class="c1" href="#">FAQ</a>
+                <a class="c2" href="#">Help center</a>
+                <a class="c3" href="#">Term Of use</a>
+                <a class="c4" href="#">Privacy</a>
+            </div>
+            <div class="in">
+            <a class="c5" href="#">cookie prefarances</a>
+            <a class="c5" href="#">corporate information</a>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #box{
+            height: 200px;
+            width: 2000px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onmouseup="getOnMouseUp()" onmousedown="getOnMouseDown()"></div>
+    <script>
+        function getOnMouseUp()
+        {
+            let ele=document.getElementById("box")
+            ele.style.height="300px"
+            ele.style.width="300px"
+            ele.style.backgroundImage=url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indiatimes.com%2Flifestyle%2Fself%2Ffunny-photos-of-cricketers-279758.html&psig=AOvVaw0tu4CUXxQ5mnmxhtYKh9wM&ust=1680097758085000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCKDFhoHi_v0CFQAAAAAdAAAAABAE')
+            ele.style.backgroundRepeat="norepeat"
+            ele.style.backgroundSize="cover"
+            ele.style.backgroundPosition="center"
+        }
+        function getOnMouseDown()
+        {
+            let ele=document.getElementById("box")
+            ele.style.height="300px"
+            ele.style.width="300px"
+            ele.style.backgroundImage=url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indiatimes.com%2Flifestyle%2Fself%2Ffunny-photos-of-cricketers-279758.html&psig=AOvVaw0tu4CUXxQ5mnmxhtYKh9wM&ust=1680097758085000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCKDFhoHi_v0CFQAAAAAdAAAAABAJ')
+            ele.style.backgroundRepeat="norepeat"
+            ele.style.backgroundSize="cover"
+            ele.style.backgroundPosition="center"
+        }
+    </script>
+</body>
+</html>
